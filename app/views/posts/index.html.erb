@@ -1,15 +1,23 @@
-<h1>Listing posts</h1>
+<h4>
+  <img src="http://i.imgur.com/AvPAXAH.png" title="Logo" />
+</h4>
 
-<% @posts.each do |post| %>
-    <article>
-    <h2><%= link_to post.title, post%><small><%= post.author %></small></h2>
-    <%= post.title %>
-    <p>Posted: <%= post.body %></p>
-    <%= post.published_at %>
-    <%= link_to 'Show', post %>
-    <%= link_to 'Edit', edit_post_path(post) %>
-    <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
-  </article>
-<% end %>
+<div>  
+  <h1>Existing posts</h1>
 
-<%= link_to 'New Post', new_post_path %>
+  <% @posts.each do |post| %>
+      <article>
+      <h2><%= link_to post.title, post%><small><%= post.author %></small></h2>
+      <%= post.title %>
+      <p>Posted: <%= post.body %></p>
+      <%= post.published_at %>
+      <%= link_to 'Show', post %>
+      <%= link_to 'Edit', edit_post_path(post) %>
+      <%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </article>
+  <% end %>
+</div>
+
+<h3 class="newpost">
+  <%= link_to 'New Post', new_post_path %>
+</h3>
