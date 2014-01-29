@@ -1,41 +1,32 @@
 body {
-  background:
-linear-gradient(324deg, #bbc4cd 4%,   transparent 50%) -70px 43px,
-linear-gradient( 36deg, #bbc4cd 4%,   transparent 50%) 30px 43px,
-linear-gradient( 72deg, #e30d1d 8.5%, transparent 8.5%) 30px 43px,
-linear-gradient(288deg, #fff5ea 8.5%, transparent 8.5%) -70px 43px,
-linear-gradient(216deg, #120be3 7.5%, transparent 7.5%) -70px 23px,
-linear-gradient(144deg, #120be3 7.5%, transparent 7.5%) 30px 23px,
-
-linear-gradient(324deg, #bbc4cd 4%,   transparent 100%) -20px 93px,
-linear-gradient( 36deg, #bbc4cd 4%,   transparent 100%) 80px 93px,
-linear-gradient( 72deg, #e30d1d 8.5%, transparent 8.5%) 80px 93px,
-linear-gradient(288deg, #fff5ea 8.5%, transparent 8.5%) -20px 93px,
-linear-gradient(216deg, #120be3 7.5%, transparent 7.5%) -20px 73px,
-linear-gradient(144deg, #120be3 7.5%, transparent 7.5%) 80px 73px;
-background-color: #f4fcf2;
-background-size: 100px 100px;
+  background-image: url(http://wallike.com/wp-content/uploads/2013/10/Denver-Broncos-Logo-640x400.jpg);
+  color: white;
 }
 
-
 footer p{
+  color: white;
   text-align: center
 }
 
-div {
-  margin-top: -85px;
-  background-color: white;
-  padding:5px;
-  border-radius: 20px;
-}
+nav ul { 
+  margin: 0; 
+  padding: 5px; 
+  text-align: center; 
+  } 
 
-h3 {
+nav ul li a:hover{ 
+  background: orange;
+  webkit-rotate:(2turn);
+  } 
+
+nav li {
+  background-color: #f4fcf2;
+  border-top: solid;
+  border-color: orange;
+  display: inline;
   padding: 5px;
-  background-color: white;
-  border-radius: 20px 
-}
+  list-style-type: none;
+  border-top-left-radius: 70%;
+  border-bottom-right-radius: 40%;
 
-h4 {
-  width:100%;
-  margin:-75px auto 10px;
 }

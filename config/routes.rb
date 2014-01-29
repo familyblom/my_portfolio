@@ -3,8 +3,36 @@ MyPortfolio::Application.routes.draw do
   root to: "static_pages#home"
   resources :posts
 
-  get "/about_me", to: "static_pages#about_me", as: :about_me
+
+  # The first get is compatible with all versions of ruby including 4.0. The forward slash
+  #   in the URL is optional
+  get 'about_me' => 'static_pages#about_me', as: :about_me
+  # get "/about_me", to: "static_pages#about_me", as: :about_me
   get "/gallery", to: "static_pages#gallery", as: :gallery
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
